@@ -3,6 +3,7 @@ import 'package:otaku/chats/profil_user_page/profile_user_circle.dart';
 import 'package:otaku/chats/profil_user_page/profile_user_followers.dart';
 import 'package:otaku/chats/profil_user_page/profile_user_letters.dart';
 import 'package:otaku/chats/profil_user_page/profile_user_post.dart';
+import 'package:otaku/propfiluser/edit_user.dart';
 
 class MyProfile extends StatefulWidget {
   const MyProfile({super.key});
@@ -15,6 +16,14 @@ class _MyProfileState extends State<MyProfile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => const EDitUserPage()));
+        },  backgroundColor: Colors.purple,
+        child: const Icon(Icons.edit),),
       body: DefaultTabController(
         length: 4,
         child: NestedScrollView(

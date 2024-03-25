@@ -60,9 +60,7 @@ class _HomeTchatState extends State<HomeTchat> {
                 Tab(
                   text: "Statut",
                 ),
-                Tab(
-                  text:  "Appels",
-                )
+                
               
             ]),
             
@@ -81,7 +79,7 @@ class _HomeTchatState extends State<HomeTchat> {
         children: [
           MessageSection(),
          // Headersection(),
-          StorySection(),
+           StorySection(),
           //Expanded(
            // child: MessageSection(),
          // )
@@ -140,42 +138,42 @@ class MessageSection extends StatelessWidget {
   MessageSection({super.key});
   final List messages = [
     {
-      "senderporfile": 'assets/images/adonis.jpg',
+      "senderporfile": 'assets/images/boobs.jpg',
       "sendername": "Sukuna",
       "textmessage": 'yoiki tenkai:fukuma misushi',
       "unread": 7,
       "date": "10:34"
     },
     {
-      "senderporfile": 'assets/images/adonis.jpg',
+      "senderporfile": 'assets/images/ronie.PNG.png',
       "sendername": "gojo satoru",
       "textmessage": "yoiki tenkai:mugen....",
       "unread": 0,
       "date": "20:34"
     },
     {
-      "senderporfile": 'assets/images/adonis.jpg',
+      "senderporfile": 'assets/images/one_piece.jpg',
       "sendername": "Shanks",
       "textmessage": "KAMUSARI",
       "unread": 5,
       "date": "09:34"
     },
     {
-      "senderporfile": 'assets/images/adonis.jpg',
+      "senderporfile": 'assets/images/vorpal.PNG',
       "sendername": "yami sukehiro",
       "textmessage": "yami maho:jigengiri higan",
       "unread": 0,
       "date": "10:34"
     },
     {
-      "senderporfile": 'assets/images/adonis.jpg',
+      "senderporfile": 'assets/images/yagami.jpg',
       "sendername": "luffy",
       "textmessage": "gomu gomu no:bajruang gun",
       "unread": 0,
       "date": "11:34"
     },
     {
-      "senderporfile": 'assets/images/adonis.jpg',
+      "senderporfile": 'assets/images/Katsuki_and_his_mom.jpg',
       "sendername": "gin ichimaru",
       "textmessage": "bankai:kamishini no yari",
       "unread": 1,
@@ -189,28 +187,28 @@ class MessageSection extends StatelessWidget {
       "date": "06:34"
     },
     {
-      "senderporfile": 'assets/images/adonis.jpg',
+      "senderporfile": 'assets/images/jjk.jpg',
       "sendername": "saitama",
       "textmessage": "maji naguri",
       "unread": 6,
       "date": "10:38"
     },
     {
-      "senderporfile": 'assets/images/adonis.jpg',
+      "senderporfile": 'assets/images/IMG_20231107_065523_101.jpg',
       "sendername": "mash",
       "textmessage": "chukurimu",
       "unread": 2,
       "date": "05:34"
     },
     {
-      "senderporfile": 'assets/images/adonis.jpg',
+      "senderporfile": 'assets/images/IMG_20231005_163002_827.jpg',
       "sendername": "robin",
       "textmessage": "gigantesco mano",
       "unread": 0,
       "date": "18:34"
     },
     {
-      "senderporfile": 'assets/images/adonis.jpg',
+      "senderporfile": 'assets/images/IMG_20231229_140923_012.jpg',
       "sendername": "yuta okotsu",
       "textmessage": "okotsu na okotsu",
       "unread": 4,
@@ -241,9 +239,14 @@ class MessageSection extends StatelessWidget {
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                   ),
-                  child: CircleAvatar(
+                  child: InkWell(
+                    onDoubleTap: () {
+                       
+                    },
+                    child: CircleAvatar(
                     radius: 20,
                     backgroundImage: AssetImage(msg["senderporfile"]),
+                  ),
                   ),
                 ),
                 const SizedBox(width: 10),

@@ -212,22 +212,9 @@ class _TchatPageState extends State<TchatPage> {
 
     _textEditingController.clear();
   }
-
-  void _deleteMessage(int index) {
-    setState(() {
-      _messages.remove(index);
-    });
-  }
-
   void dispose() {
     _textEditingController.dispose();
     super.dispose();
-  }
-
-  void _replyToMessage(int index) {
-    final repliedMessage = _messages[index];
-    // final replyText = 'Re:${repliedMessage['text']}';
-    // _textEditingController.text = replyText;
   }
 
   @override
@@ -393,18 +380,6 @@ class _BottoSectionState extends State<BottoSection> {
     _textEditingController.clear();
   }
 
-  void _deleteMessage(int index) {
-    setState(() {
-      _messages.remove(index);
-    });
-  }
-
-  void _replyToMessage(int index) {
-    final repliedMessage = _messages[index];
-    // final replyText = 'Re:${repliedMessage['text']}';
-    //_textEditingController.text = replyText;
-  }
-
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -502,21 +477,21 @@ class MessageBubble extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: isMee ? Alignment.topLeft : Alignment.topRight,
+      alignment: isMee ? Alignment.topRight : Alignment.topLeft,
       child: Container(
           decoration: isMee
               ? const BoxDecoration(
-                  color: Colors.purple,
+                  color: Colors.blue,
                   borderRadius: BorderRadius.only(
                       topRight: Radius.circular(30),
                       topLeft: Radius.circular(30),
                       bottomLeft: Radius.circular(29)))
               : const BoxDecoration(
-                  color: Colors.blue,
+                  color: Colors.grey,
                   borderRadius: BorderRadius.only(
                       topRight: Radius.circular(30),
                       topLeft: Radius.circular(30),
-                      bottomLeft: Radius.circular(29))),
+                      bottomRight: Radius.circular(29))),
           margin: const EdgeInsets.only(top: 10, right: 10, left: 10),
           padding: const EdgeInsets.all(10),
           child: Column(
@@ -526,8 +501,10 @@ class MessageBubble extends StatelessWidget {
             children: [
               Text(
                 message.text,
-                style: const TextStyle(
-                    color: Colors.white, fontWeight: FontWeight.w500),
+                style: isMee ? TextStyle(
+                    color: Colors.white, fontWeight: FontWeight.w300)
+                    :TextStyle(
+                    color: Colors.black, fontWeight: FontWeight.w300),
               ),
               SizedBox(
                 height: 5,

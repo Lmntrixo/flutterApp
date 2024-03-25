@@ -32,7 +32,7 @@ class _MyWidgetState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: const [ HomePostReels(),HomeCirclePage(),HomeTchat(),HomeSalle(),MyProfile()][_currentIndex],
+        body:  [ const HomePostReels(),HomeCirclePage(),const HomeTchat(),const HomeSalle(),const MyProfile()][_currentIndex],
         bottomNavigationBar: BottomNavigationBar(
 
           currentIndex: _currentIndex,

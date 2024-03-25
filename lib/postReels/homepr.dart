@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:otaku/postReels/create_post.dart';
 import 'package:otaku/postReels/post_page.dart';
 import 'package:otaku/postReels/reels_page.dart';
 
@@ -41,7 +42,16 @@ class _HomePostReelsState extends State<HomePostReels> {
                   )
                 ]),
           ),
-          
+          floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => const CreatePostPage()));
+        },
+        backgroundColor: Colors.purple,
+        child: const Icon(Icons.create),
+      ),
           body: const TabBarView(
             children: [
               PostPage(),

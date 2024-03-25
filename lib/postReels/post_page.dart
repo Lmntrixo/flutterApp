@@ -15,6 +15,7 @@ class _PostPageState extends State<PostPage> {
         children: [
           
         Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               padding:const EdgeInsets.all(0.1),
@@ -85,13 +86,13 @@ class _PostPageState extends State<PostPage> {
                                   children: [
                                     IconButton(
                                         onPressed: () {},
-                                        icon:const Icon(Icons.reply_sharp)),
+                                        icon:const Icon(Icons.reply_sharp,color: Colors.grey,)),
                                       const  SizedBox(width: 10,),
                                     IconButton(
-                                        onPressed: () {}, icon:const Icon(Icons.chat)),
+                                        onPressed: () {}, icon:const Icon(Icons.chat,color: Colors.grey,)),
                                        const SizedBox(width: 10,),
                                   IconButton(
-                                        onPressed: () {}, icon:const Icon(Icons.favorite))
+                                        onPressed: () {}, icon:const Icon(Icons.favorite,color: Colors.grey,))
                                   ],
                                 ),
                                 PopupMenuButton(itemBuilder: (context) {
@@ -106,7 +107,7 @@ class _PostPageState extends State<PostPage> {
                               ],
                             ),
                 ),
-                SizedBox(height: 0.6,
+                SizedBox(height: 0.9,
                 child:Container(
                   decoration:const  BoxDecoration(
                     color: Colors.grey
@@ -119,6 +120,7 @@ class _PostPageState extends State<PostPage> {
         ),
 
         Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               padding:const EdgeInsets.all(0.1),
@@ -189,13 +191,13 @@ class _PostPageState extends State<PostPage> {
                                   children: [
                                     IconButton(
                                         onPressed: () {},
-                                        icon:const  Icon(Icons.reply_sharp)),
+                                        icon:const  Icon(Icons.reply_sharp,color: Colors.grey,)),
                                        const  SizedBox(width: 10,),
                                     IconButton(
-                                        onPressed: () {}, icon:const  Icon(Icons.chat)),
+                                        onPressed: () {}, icon:const  Icon(Icons.chat,color: Colors.grey,)),
                                       const  SizedBox(width: 10,),
                                   IconButton(
-                                        onPressed: () {}, icon:const  Icon(Icons.favorite))
+                                        onPressed: () {}, icon:const  Icon(Icons.favorite,color: Colors.grey,))
                                   ],
                                 ),
                                 PopupMenuButton(itemBuilder: (context) {
@@ -224,6 +226,7 @@ class _PostPageState extends State<PostPage> {
 
 
         Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               padding:const EdgeInsets.all(0.1),
@@ -294,13 +297,13 @@ class _PostPageState extends State<PostPage> {
                                   children: [
                                     IconButton(
                                         onPressed: () {},
-                                        icon: const Icon(Icons.reply_sharp)),
+                                        icon: const Icon(Icons.reply_sharp,color: Colors.grey,)),
                                        const  SizedBox(width: 10,),
                                     IconButton(
-                                        onPressed: () {}, icon: const Icon(Icons.chat)),
+                                        onPressed: () {}, icon: const Icon(Icons.chat,color: Colors.grey,)),
                                        const  SizedBox(width: 10,),
                                   IconButton(
-                                        onPressed: () {}, icon:const Icon(Icons.favorite))
+                                        onPressed: () {}, icon:const Icon(Icons.favorite,color: Colors.grey,))
                                   ],
                                 ),
                                 PopupMenuButton(itemBuilder: (context) {
@@ -314,7 +317,7 @@ class _PostPageState extends State<PostPage> {
                               ],
                             ),
                 ),
-                SizedBox(height: 0.6,
+                SizedBox(height: 0.9,
                 child:Container(
                   decoration:const  BoxDecoration(
                     color: Colors.grey
@@ -326,6 +329,7 @@ class _PostPageState extends State<PostPage> {
           ],
         ),
         Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               padding:const  EdgeInsets.all(0.1),
@@ -396,13 +400,13 @@ class _PostPageState extends State<PostPage> {
                                   children: [
                                     IconButton(
                                         onPressed: () {},
-                                        icon: const Icon(Icons.reply_sharp)),
+                                        icon: const Icon(Icons.reply_sharp,color: Colors.grey,)),
                                        const  SizedBox(width: 10,),
                                     IconButton(
-                                        onPressed: () {}, icon: const Icon(Icons.chat)),
+                                        onPressed: () {}, icon: const Icon(Icons.chat,color: Colors.grey,)),
                                         const SizedBox(width: 10,),
                                   IconButton(
-                                        onPressed: () {}, icon:const  Icon(Icons.favorite))
+                                        onPressed: () {}, icon:const  Icon(Icons.favorite,color: Colors.grey,))
                                   ],
                                 ),
                                 PopupMenuButton(itemBuilder: (context) {
@@ -429,6 +433,7 @@ class _PostPageState extends State<PostPage> {
         ),
 
         Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               padding:const  EdgeInsets.all(0.2),
@@ -499,13 +504,13 @@ class _PostPageState extends State<PostPage> {
                                   children: [
                                     IconButton(
                                         onPressed: () {},
-                                        icon: const Icon(Icons.reply_sharp)),
+                                        icon: const Icon(Icons.reply_sharp,color: Colors.grey,)),
                                       const  SizedBox(width: 10,),
                                     IconButton(
-                                        onPressed: () {}, icon: const Icon(Icons.chat)),
+                                        onPressed: () {}, icon: const Icon(Icons.chat,color: Colors.grey,)),
                                       const SizedBox(width: 10,),
                                   IconButton(
-                                        onPressed: () {}, icon:const  Icon(Icons.favorite))
+                                        onPressed: () {}, icon:const  Icon(Icons.favorite,color: Colors.grey,))
                                   ],
                                 ),
                                 PopupMenuButton(itemBuilder: (context) {
@@ -519,7 +524,7 @@ class _PostPageState extends State<PostPage> {
                               ],
                             ),
                 ),
-                SizedBox(height: 0.6,
+                SizedBox(height: 0.9,
                 child:Container(
                   decoration:const  BoxDecoration(
                     color: Colors.grey
