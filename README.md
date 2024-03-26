@@ -7,6 +7,8 @@
 
 This project is a  for social media Flutter application.
 
+have a look on screenshot folder for some previews
+
 
 
 
