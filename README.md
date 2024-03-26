@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+# flutterApp<<<<<<< HEAD
 # otaku
 
 A new Flutter project.
